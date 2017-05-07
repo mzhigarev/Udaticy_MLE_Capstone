@@ -61,7 +61,8 @@ import shutil
 shutil.rmtree("/content/Udaticy_MLE_Capstone/")
 shutil.rmtree("/content/datalab/")
 ```
-5) Finally your folder should contain these files and folders: 
+5) Due to GitHub limit for file size, not all files will be copied. You need manually upload files from [Google Drive repository](https://drive.google.com/drive/folders/0B_MIut4tVCU4cFh0Z19hWmJWMDA?usp=sharing) into your directory on Google Cloud.
+6) Finally your directory should contain these files and folders: 
 ```
 ad_test/
 excel-word-classifier-tt/
