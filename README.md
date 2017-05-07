@@ -61,7 +61,7 @@ import shutil
 shutil.rmtree("/content/Udaticy_MLE_Capstone/")
 shutil.rmtree("/content/datalab/")
 ```
-5) Due to GitHub limit for file size, not all files will be copied. You need manually upload files from [Google Drive repository](https://drive.google.com/drive/folders/0B_MIut4tVCU4U3JGNDFuRDFHRnM?usp=sharing) into your directory on Google Cloud.
+5) Due to GitHub limit for file size, not all files will be copied. You need manually upload files from [Google Drive repository](https://drive.google.com/open?id=0B_MIut4tVCU4Z2JyQzN5cGZ5ejQ) into your directory on Google Cloud.
 6) Finally your directory should contain these files and folders: 
 ```
 ad_test/
