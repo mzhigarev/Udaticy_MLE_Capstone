@@ -9,7 +9,8 @@ The project consists of 2 parts:
 2) ClassifyImages.ipynb - main project. 
 
 
-### Prerequisites
+
+## Prerequisites
 
 The project was build on Python 2.7 and Google Cloud Platform using:
 - Google VM instance
@@ -35,7 +36,8 @@ Libraries and modules we used:
 - pytube (optional)
 
 
-### Setting up
+
+## Setting up
 
 To make the project running in Google Cloud, follow the instruction below.
 1) set up your account and project in [Google Cloud.](https://cloud.google.com/)
@@ -69,7 +71,8 @@ GetFiles.ipynb
 now you can reference the folder with path "/content/", so for example GetFiles.ipynb has a path "/content/GetFiles.ipynb"
 
 
-### Optional
+
+## Optional
 We pre-collected files for testing/training. If you want to collect your own set, please run GetFiles.ipynb on local machine. 
 
 
