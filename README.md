@@ -26,31 +26,40 @@ Libraries and modules we used:
 - logging
 - pillow
 - os
-- random
-- json
-- urllib
-- requests
-- codecs
-- cv2
-- pytube
+- random (optional)
+- json (optional)
+- urllib (optional)
+- requests (optional)
+- codecs (optional)
+- cv2 (optional)
+- pytube (optional)
 
 
 ### Setting up
 
-We used OpenCV and Pytube for data collection and preparation (see GetFiles.ipynb). The libraries are optional, all files you can find [here](https://drive.google.com/open?id=0B_MIut4tVCU4cFh0Z19hWmJWMDA). In case you want to gather your own data, use the libs on your local machine. 
-
-Install the labraries:
-```
-!pip install pytube
-!pip install opencv-python
-```
-
 To make the project running in Google Cloud, follow the instruction below.
 1) set up your account and project in [Google Cloud.](https://cloud.google.com/)
 2) create and connect to a [Cloud Datalab instance](https://cloud.google.com/datalab/docs/quickstarts#create_and_connect_to_a_cloud_datalab_instance)
-3) copy [files and notebooks](https://drive.google.com/open?id=0B_MIut4tVCU4cFh0Z19hWmJWMDA) in your core folder which has url similar to this - (https://XXXX-dot-XXXXXXX-dot-devshell.appspot.com/tree)
+3) go to /content/ directory by clicking Home icon (see 1). Create a notebook in home directory by clicking Notebook (see 2) 
 
-Finally your folder should contain these files and folders: 
+<a><img src="http://image.prntscr.com/image/5ff4430c4e7b4bf7bedbb942c5d92a1c.png" height="200"></a>
+
+4) insert code cell in your new notebook and run
+```
+!git clone https://github.com/mzhigarev/Udaticy_MLE_Capstone
+```
+to copy GitHub repo to your Google Datalab folder. This command will move the files into home directory ('/content/')
+
+```
+!gsutil mv /content/Udaticy_MLE_Capstone/* /content/
+```
+And lastly, remove unnecessary folders
+```
+import shutil
+shutil.rmtree("/content/Udaticy_MLE_Capstone/")
+shutil.rmtree("/content/datalab/")
+```
+5) Finally your folder should contain these files and folders: 
 ```
 ad_test/
 excel-word-classifier-tt/
@@ -58,3 +67,17 @@ ClassifyImages.ipynb
 GetFiles.ipynb
 ```
 now you can reference the folder with path "/content/", so for example GetFiles.ipynb has a path "/content/GetFiles.ipynb"
+
+
+### Optional
+We pre-collected files for testing/training. If you want to collect your own set, please run GetFiles.ipynb on local machine. 
+
+
+We used OpenCV and Pytube for data collection and preparation (see GetFiles.ipynb). The libraries are optional, all files you can find [here](https://github.com/mzhigarev/Udaticy_MLE_Capstone/excel-word-classifier-tt/). In case you want to gather your own data, use the libs on your local machine. 
+
+Install the labraries:
+```
+!pip install pytube
+!pip install opencv-python
+```
+
