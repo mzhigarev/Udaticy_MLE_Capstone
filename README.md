@@ -1,4 +1,4 @@
-# Project Title
+# Image classifier
 Image classifier is a Udacity capstone project.
 
 
